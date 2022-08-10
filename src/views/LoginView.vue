@@ -1,16 +1,23 @@
 <script>
 export default {
+  data() {
+    return {
+      isAuthenticated: this.$auth0.isAuthenticated,
+    };
+  },
   methods: {
     handleLogin() {
-      // TODO: Implement
-      console.log('Handle login')
-    }
-  }
-}
+      this.$auth0.loginWithRedirect();
+    },
+  },
+};
 </script>
 
 <template>
   <div>
-    <button @click="handleLogin">Login</button> to your account
+    <div v-if="isAuthenticated">You are currently logged in.</div>
+    <div v-else>
+      <button @click="handleLogin">Login</button> to your account.
+    </div>
   </div>
 </template>

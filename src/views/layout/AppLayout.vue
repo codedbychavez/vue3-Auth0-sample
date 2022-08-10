@@ -1,18 +1,24 @@
 <script>
-import Navbar from '../../components/shared/Navbar.vue';
+import Navbar from "../../components/shared/Navbar.vue";
 export default {
   props: {
     navigationItems: Array,
   },
-  components: { Navbar }
-}
+  components: { Navbar },
+};
 </script>
 
 <template>
-  <div>
+  <div class="app-layout">
     <Navbar :navigationItems="navigationItems" />
     <main>
-        <slot />
+      <slot />
     </main>
   </div>
 </template>
+
+<style scoped>
+.app-layout {
+  padding: 1rem;
+}
+</style>
