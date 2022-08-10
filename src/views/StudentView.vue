@@ -1,5 +1,5 @@
 <template>
   <div>
-    Home page
+    This is the student page
   </div>
 </template>
