@@ -16,6 +16,14 @@ export default {
         {
           name: 'Student',
           path: '/student'
+        },
+        {
+          name: 'Login',
+          path: '/login'
+        },
+        {
+          name: 'Logout',
+          path: '/logout'
         }
       ]
     }

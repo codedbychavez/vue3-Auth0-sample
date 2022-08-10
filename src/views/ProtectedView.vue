@@ -1,3 +1,3 @@
 <template>
-  <div>This is the protected page</div>
+  <div>This is the <strong>protected</strong> page</div>
 </template>

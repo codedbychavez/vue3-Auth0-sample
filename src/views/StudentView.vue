@@ -1,5 +1,5 @@
 <template>
   <div>
-    This is the student page
+    This is the <strong>student</strong> page
   </div>
 </template>
